@@ -1,7 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import Movies from "./Movies";
-import { api } from "../api";
-import { api_key } from "./../api/index";
+import { api, api_key } from "../api";
 import { useDispatch } from "react-redux";
 import { fetchMovies } from "./../redux/action/movies/index";
 
