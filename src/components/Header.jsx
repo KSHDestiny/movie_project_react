@@ -1,5 +1,4 @@
-import { Button, Navbar } from "flowbite-react";
-import React from "react";
+import { Navbar } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -11,10 +10,7 @@ const Header = () => {
             Code-Lab Movie Channel
           </span>
         </Link>
-        <div className="flex md:order-2">
-          <Button>Login/Register</Button>
-          <Navbar.Toggle />
-        </div>
+        <div className="flex md:order-2"></div>
       </Navbar>
     </div>
   );
