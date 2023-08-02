@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import MovieCard from "./MovieCard";
 import { useSelector } from "react-redux";
 

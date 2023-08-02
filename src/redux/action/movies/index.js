@@ -14,3 +14,10 @@ export const selectedMovie = (movie) => {
     payload: movie,
   };
 };
+
+export const removeSelectedMovie = (movie) => {
+  return {
+    type: ActionType.REMOVE_SELECTED_MOVIE,
+    payload: movie,
+  };
+};

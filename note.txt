@@ -28,3 +28,8 @@ Redux
 
 API for movie   // https://www.themoviedb.org/
 API key -> https://api.themoviedb.org/3/movie/now_playing?api_key=7c28f5cb7e06c326f5ceec67d5ff601c
+
+
+Movie Detail -> https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}
+
+Movie Search -> https://api.themoviedb.org/3/search/movie?query={search}&api_key={api_key}
