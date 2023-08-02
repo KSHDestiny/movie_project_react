@@ -1,0 +1,28 @@
+Redux
+- Installation
+    npm i redux react-redux
+
+- Flow
+    UI > User Event > Action > Reducer > Store > UI (Provider => Redux + React)
+
+- File Structure ( redux >)
+    action > (action.js , movies > index.js)
+    reducer > (index.js , movie > index.js)
+    store > index.js
+
+- Action
+    action.js => create Types
+    movies > index.js => get Types from action.js & create actions(type+payload)
+
+- Reducer
+    movie > index.js => declare Initial payload & create reducer by its type condition // create reducer payload depending on type
+    index.js => combine all reducers using combineReducers from redux
+
+- Store
+    index.js => Store combined reducers using createStore from redux
+    sample : const store = createStore(
+                reducers,
+                {},
+                window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()    // used for browser extension from (https://github.com/zalmoxisus/redux-devtools-extension)
+            );
+
