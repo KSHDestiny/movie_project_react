@@ -1,10 +1,24 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import { Route, Routes } from "react-router";
+import NotFoundPage from "./components/NotFoundPage";
+import Details from "./components/Details";
 
 const App = () => {
   return (
     <div>
-      <h1>Redux Testing with Movie App</h1>
+      <Header></Header>
+      {/* <Home></Home> */}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/movies/details/:id" element={<Details />} />
+
+        <Route path="*" element={<NotFoundPage />}></Route>
+      </Routes>
     </div>
   );
 };
