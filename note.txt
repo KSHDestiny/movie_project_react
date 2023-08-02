@@ -26,3 +26,5 @@ Redux
                 window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()    // used for browser extension from (https://github.com/zalmoxisus/redux-devtools-extension)
             );
 
+API for movie   // https://www.themoviedb.org/
+API key -> https://api.themoviedb.org/3/movie/now_playing?api_key=7c28f5cb7e06c326f5ceec67d5ff601c
